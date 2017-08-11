@@ -9,7 +9,11 @@
 
                 <div class="panel-body">
                     You are logged in!
-                    {{ Auth::table('users')->get()}}
+                    <code>
+                    <?php $user=DB::table('users')->get();
+                    echo $user;
+                    ?>
+                  </code>
                 </div>
             </div>
         </div>
